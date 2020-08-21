@@ -1,20 +1,13 @@
-<html lang="en">
+<html lang="en" debug="true">
     <head>
-        <!-- Visibility toggle script -->
-        <script type="text/javascript">
-            <!--
-            function toggle_visibility(id) {
-                var e = document.getElementById(id);
-                if (e.style.display == 'block')
-                    e.style.display = 'none';
-                else
-                    e.style.display = 'block';
-            }
-//-->
-        </script>
+
+        <style>
+
+        </style>
     </head>
     <body>
-    aaa123
+    <img src="../img/img1.png">
+
         <h1>Online Help</h1>
         <p class="boxtitle"><a href="#" onclick="toggle_visibility('help_topics');" 
   class="boxtitle">[+] Show/Hide Help Topics</a></p>    
@@ -27,8 +20,12 @@
             <li>Partners - Oracle partner solutions and programs. Popular resources and 
                 membership opportunities.</li>
         </ul>
-     <p><a href="about:blank" onclick="app.exit()">Exit the Application</a></p>
-    <button type="button" onclick="app.reloadHtml()">reload</button>
+     <p><a href="about:blank" onclick="J.exit()">Exit the Application</a></p>
+    <button type="button" onclick="J.reloadHtml()">reload</button>
+    <button type="button" onclick="testCallReturn()">return</button>
+
+
+    <div id="test_t"></div>
 
 
     <script type="text/javascript" src="https://cdn.bootcss.com/vConsole/3.3.0/vconsole.min.js"></script>
@@ -40,5 +37,12 @@
         console.log('Hello world');
     </script>
     </body>
+
+<script>
+    function testCallReturn(){
+        alert(window.innerHeight)
+        window.document.getElementById("test_t").innerHTML+= "<br>"+J.callBack("assaaa");
+    }
+</script>
 
 </html>
