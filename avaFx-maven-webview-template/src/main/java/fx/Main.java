@@ -10,8 +10,8 @@ import cn.kind.fx.core.FxWeb;
 public class Main extends FxWeb{
 
 	public static void main(String[] args) {
-		browers.setWindowWidth(600);
-		browers.setWindowHeight(600);
+		browers.setWindowWidth(375);
+		browers.setWindowHeight(667);
 		createBrowser(args, Main.class);
 	}
 }
