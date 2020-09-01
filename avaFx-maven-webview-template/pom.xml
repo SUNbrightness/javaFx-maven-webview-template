@@ -31,15 +31,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>8</source>
-                    <target>8</target>
-                </configuration>
-            </plugin>
-
 
             <plugin>
                 <groupId>com.zenjava</groupId>
@@ -54,10 +45,9 @@
                     <!--                    <bundler>dmg</bundler>-->
                 </configuration>
             </plugin>
+
+
         </plugins>
-
-
-
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -68,7 +58,7 @@
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
-                    <include>**/*.*</include>
+                    <include>my-app/dist/**/*.*</include>
                 </includes>
             </resource>
         </resources>

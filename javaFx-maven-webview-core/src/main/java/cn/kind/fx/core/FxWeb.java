@@ -4,6 +4,7 @@ import cn.kind.fx.demo.MyController;
 import cn.kind.fx.ioc.ApplicationContext;
 import cn.kind.fx.ioc.support.AnnotationApplicationContext;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.web.WebEngine;
@@ -39,7 +40,6 @@ public class FxWeb extends Application {
 
 		browers.getWebEngine().load(url.toExternalForm());
 
-
 		browers.setScene(new Scene(browers.getWebView(), browers.getWindowWidth(), browers.getWindowHeight()));
 
 
@@ -56,6 +56,12 @@ public class FxWeb extends Application {
 
 
 		stage.setScene(browers.getScene());
+
+		//监听关闭窗口事件,保证程序退出
+		stage.setOnCloseRequest((e)->{
+			Platform.exit();
+			System.exit(0);
+		});
 
 		stage.show();
 	}

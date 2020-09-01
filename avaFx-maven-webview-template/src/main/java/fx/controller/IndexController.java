@@ -12,7 +12,7 @@ import javafx.scene.web.WebEngine;
  * @Description $
  */
 @JController("J")
-public class TestController {
+public class IndexController {
 
 	@AutoWire
 	private WebEngine webEngine;
@@ -27,9 +27,6 @@ public class TestController {
 		Platform.exit();
 	}
 
-	public String callBack(String from){
-		String s = from + "_callBack" + System.currentTimeMillis();
-		return s;
-	}
+	
 
 }
