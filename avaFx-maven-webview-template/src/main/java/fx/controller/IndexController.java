@@ -11,8 +11,10 @@ import javafx.scene.web.WebEngine;
  * @Date 2020/8/21 09:40
  * @Description $
  */
-@JController("J")
+@JController("JC")
 public class IndexController {
+
+	private boolean autoBackUp = true;
 
 	@AutoWire
 	private WebEngine webEngine;
@@ -27,6 +29,11 @@ public class IndexController {
 		Platform.exit();
 	}
 
+
+	public void setAutoBackUp(Boolean is){
+		this.autoBackUp = is;
+		System.out.println(this.autoBackUp);
+	}
 	
 
 }

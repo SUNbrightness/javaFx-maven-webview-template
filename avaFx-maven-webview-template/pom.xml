@@ -27,6 +27,15 @@
             <artifactId>javaFx-maven-webview-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+
+        <!--json-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.73</version>
+        </dependency>
+
     </dependencies>
 
     <build>

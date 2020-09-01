@@ -14,8 +14,6 @@ public class Main extends FxWeb{
 		FxWeb.browers.setWindowWidth(375);
 		FxWeb.browers.setWindowHeight(667);
 
-
-
 		createBrowser(args, Main.class);
 	}
 }

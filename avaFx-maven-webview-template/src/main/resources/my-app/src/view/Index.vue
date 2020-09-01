@@ -90,11 +90,11 @@ mdi-information
       destroyed() {},
     
       methods: {
-          changeUsb(val){
-              console.log(val)
+          changeUsb(str){
+              console.log(str)
+              this.items = JSON.parse(str);
           }
       },
-    
     };
 </script>
 

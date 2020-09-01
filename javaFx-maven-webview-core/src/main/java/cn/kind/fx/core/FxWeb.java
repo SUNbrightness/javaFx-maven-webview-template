@@ -44,6 +44,7 @@ public class FxWeb extends Application {
 
 
 		Map<String, Object> beans = context.getBeans();
+
 		//插入关于浏览器的几个实例
 		beans.put(WebView.class.getName(),browers.getWebView());
 		beans.put(WebEngine.class.getName(),browers.getWebEngine());
